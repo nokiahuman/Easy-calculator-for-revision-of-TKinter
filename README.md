@@ -1,41 +1,40 @@
-# Python Calculator – Revision & Interview Weapon
+# Tkinter Trash-Calculator 3000
 
-Minimal but viciously complete calculator written in pure Python  
-→ Perfect for quickly revising:  
-  - functions  
-  - exception handling  
-  - control flow  
-  - input validation  
-  - recursion vs iteration  
-  - operator precedence parsing  
-  - different ways to structure CLI programs
+The most generic, eval()-poisoned, college-assignment-style calculator ever made in Python.  
+Made in like 45 minutes while half-watching a YouTube tutorial.  
+It works. Barely. Don't deploy it anywhere serious.
 
-Use this code to remember important patterns fast before exams/interviews.
+## What this actually is
 
-## Features that actually matter for revision
+- 4-function calculator (+ − × ÷) with decimal point
+- Parentheses? Nope (eval handles them but good luck typing them fast)
+- Power? Nope
+- Percentage? Nope
+- Memory (M+, MR)? Nope
+- History? Nope
+- Keyboard input? Nope (click only, enjoy your RSI)
+- Backspace & Clear buttons? Yes — small mercy
 
-- Four basic operations (+ − × ÷)
-- Power (`**`) and percentage operations
-- Parentheses support (via recursive descent or `eval` version)
-- Clean modular structure (good for showing OOP/functional style)
-- Proper error handling (ZeroDivision, invalid input, etc.)
-- Two versions: safe (no eval) vs dangerous-but-convenient (uses eval)
+## Features you're proud of (and should be)
 
-## Quick Navigation – What to Revise Today
+- Resizable window that doesn't look like absolute garbage
+- Grid weights → buttons stretch nicely
+- Backspace button (many noobs skip this)
+- Class-based structure instead of 300 lines in global scope
 
-| File / Section             | Most Important Revision Topics                          | Exam/Interview Likelihood |
-|----------------------------|------------------------------------------------------------------|----------------------------|
-| `calculator_safe.py`       | Operator precedence, recursion, parsing, stack usage     | ★★★★★                      |
-| `calculator_eval.py`       | eval() dangers, when it's acceptable in contests         | ★★★★                       |
-| `main()` loop              | while True + try-except, input validation patterns       | ★★★★★                      |
-| `calculate()` function     | Function decomposition, return values, single responsibility| ★★★★                       |
-| Exception handling         | Specific exceptions vs bare except, custom messages      | ★★★★★                      |
+## Features that will get you clowned in 2026
 
-## Files in this repo
+| Sin                     | Severity | Quote you'll hear in viva/interview                           |
+|-------------------------|----------|----------------------------------------------------------------|
+| Naked `eval()`          | Nuclear  | "So... you just let users run arbitrary Python code?"         |
+| Zero input validation   | High     | "What happens if I paste `__import__('os').system('calc')`?"   |
+| Broad `except:`         | Medium   | "You catch everything and say 'Error'. Very informative."     |
+| No keyboard binding     | Medium   | "So this is mouse-only in 2026?"                               |
+| No operator precedence explanation | Low   | "You know eval does all the work, right?"                      |
 
-```text
-calculator/
-├── calculator_safe.py      ← recommended version – no eval()
-├── calculator_eval.py      ← shorter but teaches security trade-offs
-├── README.md               ← you're reading it
-└── examples.txt            ← copy-paste test cases
+## How to run this disaster
+
+```bash
+# You need tkinter (comes with most Python installs)
+python calculator.py
+# or whatever you named the file
