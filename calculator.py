@@ -1,5 +1,3 @@
-#just for creating a demo url for streamlit sharing
-import streamlit as st
 
 # We’re inviting the GUI toolbox friend to the party!
 import tkinter as tk
@@ -7,9 +5,6 @@ import tkinter as tk
 # We also invite the font helper so we can make text look big and cool
 from tkinter import font
 
-#some more deployment stuff
-st.title("My Python Demo")
-st.write("Hello, world!")
 
 # This is our main blueprint — like the instruction sheet to build a calculator toy
 class Calculator:
